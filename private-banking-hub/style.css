@@ -215,6 +215,11 @@ h2 {
 
 /* --------- */
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
 header img {
   width: 100%;
 }
