@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standard Bank | Private Banking</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- external -->
+    <link rel="stylesheet" href="./glider.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/bentonsans-regular"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="header-img_desktop" src="./images/SB_header.png" alt="" /><img
+        class="header-img_mobile"
+        src="./images/SB_header(mobile).PNG"
+        alt=""
+      />
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero_wrapper">
+          <div class="hero-content">
+            <h1 class="hero-title">Private Banking</h1>
+            <p class="hero-detail">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+              ratione quidem sit tenetur animi accusamus.
+            </p>
+          </div>
+          <div class="img-container_hero">
+            <img
+              class="hero-img"
+              src="https://media.gettyimages.com/id/1430534745/photo/drink-coffee-happy-and-thinking-with-a-businessman-standing-by-a-window-in-the-morning-in-an.jpg?s=2048x2048&w=gi&k=20&c=8sw1wMvTWlCehdz9He4MYUAPRJfuK6o4ysWNNZUyV3w="
+              alt=""
+            />
+            <div class="possibility-signature"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <!-- featured articles -->
+        <div class="featured">
+          <h2 class="featured-title">Featured articles</h2>
+          <div class="glider-contain">
+            <div class="glider">
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Unlock your career potential</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sunt odio modi sed exercitationem assumenda natus quidem
+                    laboriosam, repellendus nihil. Animi.
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Predicting the future of technology</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci optio, perferendis fugit excepturi eligendi natus
+                    cupiditate doloremque. Vitae, et quis?
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Supporting mental health and resilience</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque accusamus nisi, maxime quisquam debitis illum
+                    praesentium dolores sequi fugiat non.
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Property as an investment</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates pariatur praesentium similique odio amet aliquid
+                    asperiores, nostrum neque dolorem quisquam.
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Inspiring entrepreneurs</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit, iusto aperiam excepturi quos inventore accusantium
+                    eveniet adipisci nulla repellat laudantium.
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-content_wrapper">
+                <div class="featured-details">
+                  <h3>Rising above the noise</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    tempora fugiat sapiente magnam assumenda aspernatur placeat.
+                    Quas ad consequuntur repudiandae.
+                  </p>
+                  <div class="cta-container">
+                    <a href="#" class="btn-main_white">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+          <script>
+            window.addEventListener("load", function () {
+              new Glider(document.querySelector(".glider"), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: ".dots",
+                draggable: true,
+                rewind: false,
+                dragVelocity: 3,
+                arrows: {
+                  prev: ".glider-prev",
+                  next: ".glider-next",
+                },
+                responsive: [
+                  {
+                    // screens greater than >= 768px
+                    breakpoint: 768,
+                    settings: {
+                      // Set to `auto` and provide item width to adjust to viewport
+                      slidesToShow: "auto",
+                      slidesToScroll: "auto",
+                      itemWidth: 350,
+                      duration: 0.25,
+                    },
+                  },
+                  {
+                    // screens greater than >= 1024px
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      itemWidth: 150,
+                      duration: 0.25,
+                    },
+                  },
+                ],
+                easing: function (x, t, b, c, d) {
+                  return c * (t /= d) * t + b;
+                },
+              });
+            });
+          </script>
+        </div>
+
+        <!-- main content -->
+        <div class="category_wrapper">
+          <!-- category 1 -->
+          <div class="thought-leadership">
+            <h2 class="category-title">Thought leadership</h2>
+            <div class="content_wrapper">
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere doloremque deleniti incidunt, consectetur eligendi vel!
+                  Cum, consequatur! Veritatis.
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem, iste sit. Illum, iusto! Illo odio fuga eligendi minus.
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/5685821/pexels-photo-5685821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum animi dolores, unde rerum architecto possimus
+                  laudantium inventore veniam?
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/5668765/pexels-photo-5668765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur exercitationem et odio, accusantium minima
+                  aspernatur culpa mollitia ipsum?
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="cta-container">
+              <a href="#" class="btn-main_white">load more</a>
+            </div>
+          </div>
+
+          <!-- category 2 -->
+          <div class="mental-health">
+            <h2 class="category-title">Mental health</h2>
+            <div class="content_wrapper">
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/185801/pexels-photo-185801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere doloremque deleniti incidunt, consectetur eligendi vel!
+                  Cum, consequatur! Veritatis.
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem, iste sit. Illum, iusto! Illo odio fuga eligendi minus.
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/6303434/pexels-photo-6303434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum animi dolores, unde rerum architecto possimus
+                  laudantium inventore veniam?
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/5699434/pexels-photo-5699434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur exercitationem et odio, accusantium minima
+                  aspernatur culpa mollitia ipsum?
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="cta-container">
+              <a href="#" class="btn-main_white">load more</a>
+            </div>
+          </div>
+
+          <!-- category 3 -->
+          <div class="career-advice">
+            <h2 class="category-title">Career advice</h2>
+            <div class="content_wrapper">
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere doloremque deleniti incidunt, consectetur eligendi vel!
+                  Cum, consequatur! Veritatis.
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/4559715/pexels-photo-4559715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem, iste sit. Illum, iusto! Illo odio fuga eligendi minus.
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum animi dolores, unde rerum architecto possimus
+                  laudantium inventore veniam?
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/5999825/pexels-photo-5999825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur exercitationem et odio, accusantium minima
+                  aspernatur culpa mollitia ipsum?
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="cta-container">
+              <a href="#" class="btn-main_white">load more</a>
+            </div>
+          </div>
+
+          <!-- category 4 -->
+          <div class="economic-themes">
+            <h2 class="category-title">Economic insights</h2>
+            <div class="content_wrapper">
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/210574/pexels-photo-210574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere doloremque deleniti incidunt, consectetur eligendi vel!
+                  Cum, consequatur! Veritatis.
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem, iste sit. Illum, iusto! Illo odio fuga eligendi minus.
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum animi dolores, unde rerum architecto possimus
+                  laudantium inventore veniam?
+                </div>
+                <div class="content-author-date">John Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+              <div class="category-content">
+                <div class="img-container_content">
+                  <img
+                    src="https://images.pexels.com/photos/6347713/pexels-photo-6347713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="content-img"
+                  />
+                </div>
+                <div class="content-title">Title</div>
+                <div class="content-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur exercitationem et odio, accusantium minima
+                  aspernatur culpa mollitia ipsum?
+                </div>
+                <div class="content-author-date">Jane Doe | 16 Feb 2023</div>
+
+                <div class="cta-container">
+                  <a href="#" class="btn-main">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="cta-container">
+              <a href="#" class="btn-main_white">load more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="footer-img_desktop" src="./images/SB_footer.png" alt="" /><img
+        class="footer-img-1_mobile"
+        src="./images/SB_footer-1 (mobile).PNG"
+        alt=""
+      /><img
+        class="footer-img-2_mobile"
+        src="./images/SB_footer-2 (mobile).PNG"
+        alt=""
+      />
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.js"
+      integrity="sha512-ILWSrKdpmM5K9QcqBevuJiiaLuCXI6UnMtjoI7R8d2uFAZ02EB4tkJCaWqeOXk5sXzdzc7qyu04YmD/aHPVAlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
