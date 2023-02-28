@@ -139,7 +139,7 @@ body {
   width: 60%;
   /* border: 2px solid red; */
   padding: 4rem;
-  padding-inline: 10rem;
+  padding-inline: clamp(2.5rem, 5vw, 5rem);
   background-color: white;
 }
 
