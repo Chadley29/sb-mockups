@@ -184,9 +184,23 @@ body {
 }
 
 .primary-summary__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 900;
+}
+
+.primary-summary__content,
+.secondary-summary__content,
+.cta-box {
+  font-size: 1.125rem;
+}
+
+.primary-summary__content u {
+  color: white;
+}
+
+.primary-summary__content li {
+  color: #0070c0;
 }
 
 .primary-summary__content p:nth-child(3),
